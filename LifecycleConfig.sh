@@ -3,6 +3,8 @@
 #!/bin/bash
 
 set -e
+# Please note that the following two lines download components from Microsoft that are distributed under a proprietary license
+# Licensing Terms for these components can be found here: https://github.com/dotnet/runtime/blob/master/PATENTS.TXT
 wget https://download.visualstudio.microsoft.com/download/pr/d731f991-8e68-4c7c-8ea0-fad5605b077a/49497b5420eecbd905158d86d738af64/dotnet-sdk-3.1.100-linux-x64.tar.gz
 wget https://download.visualstudio.microsoft.com/download/pr/30ab052d-dbb6-4bce-8a44-a831034589ed/7ffaad695afb7ccd778b0d3fc1c89f50/dotnet-runtime-3.0.1-linux-x64.tar.gz
 mkdir -p /home/ec2-user/dotnet && tar zxf dotnet-runtime-3.0.1-linux-x64.tar.gz -C /home/ec2-user/dotnet
